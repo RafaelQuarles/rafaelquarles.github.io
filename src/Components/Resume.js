@@ -23,8 +23,9 @@ class Resume extends Component {
       var programs = this.props.data.programs.map(function(programs){
         var programsImage = 'images/programs/'+programs.image;
         return <div className="columns programs">
-        <div key={programs.title}> {/*<h3>{programs.title}</h3>*/}
+        <div key={programs.title}>
         <img alt={programs.image} src={programsImage} />
+        <h5 >{programs.title}</h5>
         {/*<p>{programs.description}</p>*/}</div>
         </div>
       })
@@ -52,7 +53,7 @@ class Resume extends Component {
           <h1><span>Skills</span></h1>
         </div>
         <div className="nine columns main-col">
-          <ul className="bgrid-thirds s-grid-halves cf align-center">
+          <ul className="bgrid-thirds s-bgrid-halves align-center">
           {programs}
           </ul>
         </div>

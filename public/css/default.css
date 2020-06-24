@@ -705,15 +705,14 @@ properly.
 @media only screen and (max-width: 900px) {
 
    /* block grids on small screens */
-   .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
-   .s-bgrid-quarters [class*="column"] { width: 25%; }
-   .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
-   .s-bgrid-halves [class*="column"]   { width: 50%; }
+   .s-bgrid-sixths [class*="column"]   { width: 16.66667% !important; }
+   .s-bgrid-quarters [class*="column"] { width: 25% !important; }
+   .s-bgrid-thirds [class*="column"]   { width: 33.33333% !important; }
+   .s-bgrid-halves [class*="column"]   { width: 50% !important; }
 
-   /* block grids left clearing */
+   /* block grids left clearing*/ 
    .first { clear: none; }
    .s-first { clear: left; }
-
 }
 
 /* mobile wide/smaller tablets
@@ -727,7 +726,7 @@ properly.
 	}
    .column, .columns {
 	   width: auto !important;
-	   float: none;
+      float: left;
 	   margin-left: 0;
 	   margin-right: 0;
       padding: 0 30px;
@@ -749,6 +748,12 @@ properly.
    .row .offset-9    { margin-left: 0%; }
    .row .offset-10   { margin-left: 0%; }
    .row .offset-11   { margin-left: 0%; }
+ 
+   /*-- Mobile Format Fixes --*/
+   /*-------------------------*/
+   
+   /* puts titles at center on mobile */
+   .header-col, .main-col { float: none !important; }
 }
 
 /* mobile narrow

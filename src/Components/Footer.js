@@ -18,7 +18,7 @@ class Footer extends Component {
               {networks}
            </ul>
 
-           <ul className="copyright">
+           <ul className="copyright align-center">
               <li>&copy; Copyright 2020 Rafael Quarles</li>
            </ul>
 
