@@ -652,18 +652,36 @@ call-to-action .button {
 /* ------------------------------------------------------------------
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
+@media only screen and (min-width: 767px) {
+   #testimonials {
+      background: #1F1F1F url(../images/bruce.jpg) no-repeat center center;
+      background-size: cover !important;
+      -webkit-background-size: cover !important;
+      background-attachment: fixed;
+      background-position: absolute;
 
-#testimonials {
-   background: #1F1F1F url(../images/bruce.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-   background-position: absolute;
+      position: relative;
+      min-height: 200px;
+      width: 100%;
+      overflow: hidden;
+   }
+}
 
-   position: relative;
-   min-height: 200px;
+@media only screen and (max-width: 767px) {
+   #testimonials:before { content: "";
+   display: block;
+   position: fixed;
+   left: 0;
+   top: 0;
    width: 100%;
-   overflow: hidden;
+   height: 100%;
+   z-index: -10;
+   background: #1F1F1F url(../images/bruce.jpg) no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   }
 }
 
 #testimonials .text-container {
@@ -714,19 +732,6 @@ call-to-action .button {
 #testimonials blockquote cite:before { content: "\2014 \0020"; }
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
-
-@media only screen and (max-width: 767px) {
-   #testimonials {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      perspective: 8px;
-      perspective-origin: 0%;
-      display: flex;
-   }
-}
 
 
 /* Flex Slider
