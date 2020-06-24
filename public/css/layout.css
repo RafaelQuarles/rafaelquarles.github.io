@@ -1007,6 +1007,14 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
+@media only screen and (max-width: 767px) {
+   footer {
+      position: relative;
+      text-align: center !important;
+      display: flex;
+   }
+}
+
 /* Go To Top Button */
 #go-top {
 	position: absolute;
