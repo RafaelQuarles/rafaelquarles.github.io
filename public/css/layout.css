@@ -202,7 +202,7 @@ ul#nav li.current a { color: #11ABB0; }
    margin-bottom: 12px;
 }
 #about p {
-   line-height: 30px;
+   line-height: 27px;
    color: #7A7A7A;
 }
 #about .profile-pic {
@@ -284,6 +284,10 @@ ul#nav li.current a { color: #11ABB0; }
    overflow: hidden;
    position: relative;
    margin-bottom: 36px;
+}
+#resume p {
+   line-height: 27px;
+   color: #7A7A7A;
 }
 
 /*----------------------------------------------*/
@@ -654,12 +658,14 @@ call-to-action .button {
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
+   background-position: absolute;
 
    position: relative;
    min-height: 200px;
    width: 100%;
    overflow: hidden;
 }
+
 #testimonials .text-container {
    padding-top: 96px;
    padding-bottom: 66px;
@@ -708,6 +714,20 @@ call-to-action .button {
 #testimonials blockquote cite:before { content: "\2014 \0020"; }
 #testimonials blockquote cite a,
 #testimonials blockquote cite a:visited { color: #8B9798; border: none }
+
+@media only screen and (max-width: 767px) {
+   #testimonials {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      perspective: 8px;
+      perspective-origin: 0%;
+      display: flex;
+   }
+}
+
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */

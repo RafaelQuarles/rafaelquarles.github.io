@@ -13,12 +13,12 @@ class Footer extends Component {
       <footer>
 
      <div className="row">
-        <div className="twelve columns">
+        <div className="twelve columns.centered">
            <ul className="social-links">
               {networks}
            </ul>
 
-           <ul className="copyright align-center">
+           <ul className="copyright">
               <li>&copy; Copyright 2020 Rafael Quarles</li>
            </ul>
 

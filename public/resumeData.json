@@ -18,7 +18,7 @@
     "resumedownload":"rafaelquarles.pdf",
     "social":[
       {
-        "name":"facebook",
+        "name":"email",
         "url":"mailto:rafaquarles@gmail.com",
         "className":"fa fa-envelope"
       },
@@ -62,8 +62,8 @@
         "description":"Describe work, special projects, notable achievements, what technologies I have been working with, and anything else that would be useful for an employer to know."
       },
       {
-        "company":"Company name",
-        "title":"Position ",
+        "company":"Company name 2",
+        "title":"Position 2",
         "years":"past - present - future",
         "description":"Describe work, special projects, notable achievements, what technologies I have been working with, and anything else that would be useful for an employer to know."
       }

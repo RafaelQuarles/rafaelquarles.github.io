@@ -754,6 +754,9 @@ properly.
    
    /* puts titles at center on mobile */
    .header-col, .main-col { float: none !important; }
+
+   /* justifies text */
+   .s-just { text-align: justify; text-justify: inter-word;}
 }
 
 /* mobile narrow
