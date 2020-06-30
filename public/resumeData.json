@@ -126,16 +126,21 @@
         "title":"AWS",
         "image":"aws.jpg",
         "description":"Describe"
+      },
+      {
+        "title":"Netlify",
+        "image":"netlify.png",
+        "description":"Describe"
       }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Project 1",
-        "category":"Description for Project 1",
-        "image":"projectcover.jpg",
-        "url":"#link"
+        "title":"MERN App",
+        "category":"Expense Tracker Application Deployed on Heroku",
+        "image":"MERN-stack-app.png",
+        "url":"https://rafa-mern-expense-tracker.herokuapp.com/"
       }
     ]
   },

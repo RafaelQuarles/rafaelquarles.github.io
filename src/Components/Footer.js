@@ -13,7 +13,7 @@ class Footer extends Component {
       <footer>
 
      <div className="row">
-        <div className="twelve columns">
+        <div className="twelve columns align-center">
           <ul className="social-links">
               {networks}
           </ul>
