@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+
 class Contact extends Component {
   render() {
 
@@ -29,65 +31,77 @@ class Contact extends Component {
 
                   <p className="lead">{message}</p>
 
+                  <div className="widget widget_contact">
+                  <h4>Address and Phone</h4>
+                  <p className="address">
+                  {name}<br />
+                  {/* {street} <br /> */}
+                  {city}, {state} {zip}<br />
+                  <span>{phone}</span><br />
+                  <span><a href="mailto:rafaquarles@gmail.com"><i className="fa fa-envelope"></i> {email} </a></span>
+                  </p>
+               </div>
+
+
             </div>
+
+            
 
          </div>
 
          <div className="row">
+            {/*
             <div className="eight columns">
-
+                     
                <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
+                  <fieldset>
+                     <div>
+                        <label htmlFor="contactName">Name <span className="required">*</span></label>
+                        <input type="text" defaultValue="" size="35" id="contactName" name="contactName" required onChange={this.handleChange}/>
+                     </div>
+                     <div>
+                        <label htmlFor="contactEmail">Email <span className="required">*</span></label>
+                        <input type="email" defaultValue="" size="35" id="contactEmail" name="contactEmail" required onChange={this.handleChange}/>
+                     </div>
+                     <div>
+                        <label htmlFor="contactSubject">Subject</label>
+                        <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+                     </div>
+                     <div>
+                        <label htmlFor="contactMessage">Message <span className="required">*</span></label>
+                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
+                     </div>
+                     <div>
+                        <button type="submit" className="submit">Submit</button>
+                        <span id="image-loader">
+                           <img alt="" src="images/loader.gif" />
+                        </span>
+                     </div>
+                  </fieldset>
 				   </form>
+               
 
-           <div id="message-warning"> Error </div>
+               <div id="message-warning"> Error </div>
 				   <div id="message-success">
                   <i className="fa fa-check"></i>Your message was sent, thank you!<br />
 				   </div>
            </div>
 
-
+               
             <aside className="four columns footer-widgets">
+            
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+               <h4>Address and Phone</h4>
 					   <p className="address">
 						   {name}<br />
-						   {/* {street} <br /> */}
 						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
+						   <span>{phone}</span><br />
+                     <span><a href="mailto:rafaquarles@gmail.com"><i className="fa fa-envelope"></i> {email} </a></span>
 					   </p>
 				   </div>
-
-               {/* Use this template for updated blog posts once blog is configured
+               
+                Use this template for updated blog posts once blog is configured
                <div className="widget">
                   <h4 className="widget-title">Latest Posts</h4>
                   <ul id="blog"> no id blog yet
@@ -108,8 +122,8 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div>*/}
-            </aside>
+		         </div> 
+            </aside>*/}
       </div>
    </section>
     );
