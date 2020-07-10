@@ -138,9 +138,21 @@
     "projects": [
       {
         "title":"MERN App",
-        "category":"Expense Tracker Application Deployed on Heroku",
+        "category":"MERN Stack Expense Tracker Application deployed with Heroku",
         "image":"MERN-stack-app.png",
         "url":"https://rafa-mern-expense-tracker.herokuapp.com/"
+      },
+      {
+        "title":"Todo List App",
+        "category":"Todo List Application connected to .json place holder and deployed with Github pages",
+        "image":"TodoListApp.png",
+        "url":"https://rafaelquarles.github.io/TodoList/"
+      },
+      {
+        "title":"Local Vietnam Vets Site Redesign",
+        "category":"VVA's site redisign using solely Html and Css",
+        "image":"VvaCover.png",
+        "url":"http://studentweb.kennesaw.edu/~rquarle1/3260/project/projectindex.html"
       }
     ]
   },
