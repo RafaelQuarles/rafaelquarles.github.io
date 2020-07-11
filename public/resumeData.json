@@ -144,13 +144,13 @@
       },
       {
         "title":"Todo List App",
-        "category":"Todo List Application connected to .json place holder and deployed with Github pages",
+        "category":"Todo List Application connected to .json place holder and deployed with netlify",
         "image":"TodoListApp.png",
-        "url":"https://rafaelquarles.github.io/TodoList/"
+        "url":"https://todolistrafa.netlify.app/"
       },
       {
         "title":"Local Vietnam Vets Site Redesign",
-        "category":"VVA's site redisign using solely Html and Css",
+        "category":"VVA's site redisign using solely HTML and CSS",
         "image":"VvaCover.png",
         "url":"http://studentweb.kennesaw.edu/~rquarle1/3260/project/projectindex.html"
       }
